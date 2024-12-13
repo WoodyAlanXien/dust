@@ -8,7 +8,7 @@
         "verified": "12"
     },
     "url": "https://github.com/WoodyAlanXien/DUST",
-    "manifest": "",
+    "manifest": "https://raw.githubusercontent.com/WoodyAlanXien/dust/refs/heads/main/system.json",
     "download": "",
     "authors": [
         {
