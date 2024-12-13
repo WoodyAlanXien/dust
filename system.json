@@ -299,19 +299,5 @@
             "sourceBooks": {
                 "SRD 5.1": "SOURCE.BOOK.SRD"
             },
-            "spellLists": [
-                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.ziBzRlrpBm1KVV0j",
-                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.cuG9d7J9fQH9InYT",
-                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.MWiN7ILEO0Vd3zAZ",
-                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.FhucONA0yRZQjMmb",
-                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.sANq9JMycfSq3A5d",
-                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.PVgly1xB2S2I8GLQ",
-                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.mx4TsSbBIAaAkhQ7",
-                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.k7Rs5EyXeA0SFTXD"
-            ]
         },
-        "needsMigrationVersion": "4.0.1",
-        "compatibleMigrationVersion": "0.8",
-        "hotReload": false
-    }
 }
