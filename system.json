@@ -9,7 +9,7 @@
     },
     "url": "https://github.com/WoodyAlanXien/DUST",
     "manifest": "https://raw.githubusercontent.com/WoodyAlanXien/dust/main/system.json",
-    "download": "",
+    "download": "https://github.com/WoodyAlanXien/dust/releases/download/Current/dust.zip",
     "authors": [
         {
             "name": "Woody Alan Xien",
