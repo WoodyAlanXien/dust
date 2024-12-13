@@ -2,7 +2,7 @@
     "id": "dust",
     "title": "DUST",
     "description": "A system for playing DUST in the Foundry Virtual Tabletop environment.",
-    "version": "4.0.1",
+    "version": "0.0.1-alpha",
     "compatibility": {
         "minimum": "12.331",
         "verified": "12"
@@ -297,7 +297,7 @@
     "flags": {
         "dust": {
             "sourceBooks": {
-                "SRD 5.1": "SOURCE.BOOK.SRD"
+                "SRD": "SOURCE.BOOK.SRD"
             },
         },
 }
