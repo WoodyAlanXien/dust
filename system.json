@@ -1,0 +1,317 @@
+{
+    "id": "dust",
+    "title": "DUST",
+    "description": "A system for playing DUST in the Foundry Virtual Tabletop environment.",
+    "version": "4.0.1",
+    "compatibility": {
+        "minimum": "12.331",
+        "verified": "12"
+    },
+    "url": "https://github.com/WoodyAlanXien/DUST",
+    "manifest": "",
+    "download": "",
+    "authors": [
+        {
+            "name": "Woody Alan Xien",
+            "flags": {}
+        }
+    ],
+    "esmodules": [
+        "dust.mjs"
+    ],
+    "styles": [
+        "dust.css"
+    ],
+    "documentTypes": {
+        "ActiveEffect": {
+            "enchantment": {}
+        },
+        "Actor": {
+            "character": {
+                "htmlFields": [
+                    "details.biography.value",
+                    "details.biography.public"
+                ]
+            },
+            "npc": {
+                "htmlFields": [
+                    "details.biography.value",
+                    "details.biography.public"
+                ]
+            },
+            "vehicle": {
+                "htmlFields": [
+                    "details.biography.value",
+                    "details.biography.public"
+                ]
+            },
+            "group": {
+                "htmlFields": [
+                    "description.full",
+                    "description.summary"
+                ]
+            }
+        },
+        "Item": {
+            "weapon": {
+                "htmlFields": [
+                    "description.value",
+                    "description.chat",
+                    "unidentified.description"
+                ]
+            },
+            "equipment": {
+                "htmlFields": [
+                    "description.value",
+                    "description.chat",
+                    "unidentified.description"
+                ]
+            },
+            "consumable": {
+                "htmlFields": [
+                    "description.value",
+                    "description.chat",
+                    "unidentified.description"
+                ]
+            },
+            "tool": {
+                "htmlFields": [
+                    "description.value",
+                    "description.chat",
+                    "unidentified.description"
+                ]
+            },
+            "loot": {
+                "htmlFields": [
+                    "description.value",
+                    "description.chat",
+                    "unidentified.description"
+                ]
+            },
+            "race": {
+                "htmlFields": [
+                    "description.value",
+                    "description.chat"
+                ]
+            },
+            "background": {
+                "htmlFields": [
+                    "description.value",
+                    "description.chat"
+                ]
+            },
+            "archetype": {
+                "htmlFields": [
+                    "description.value",
+                    "description.chat"
+                ]
+            },
+            "path": {
+                "htmlFields": [
+                    "description.value",
+                    "description.chat"
+                ]
+            },
+            "spell": {
+                "htmlFields": [
+                    "description.value",
+                    "description.chat"
+                ]
+            },
+            "feat": {
+                "htmlFields": [
+                    "description.value",
+                    "description.chat"
+                ]
+            },
+            "container": {
+                "htmlFields": [
+                    "description.value",
+                    "description.chat",
+                    "unidentified.description"
+                ]
+            },
+            "backpack": {
+                "htmlFields": [
+                    "description.value",
+                    "description.chat",
+                    "unidentified.description"
+                ]
+            }
+        },
+        "JournalEntryPage": {
+            "class": {
+                "htmlFields": [
+                    "details.value",
+                    "details.additionalHitPoints",
+                    "description.additionalTraits",
+                    "description.additionalEquipment",
+                    "description.subclass"
+                ]
+            },
+            "map": {},
+            "rule": {
+                "htmlFields": [
+                    "tooltip"
+                ]
+            },
+            "spells": {},
+            "subclass": {
+                "htmlFields": [
+                    "details.value"
+                ]
+            }
+        }
+    },
+    "packs": [
+        {
+            "name": "archetypes",
+            "label": "Archetypes",
+            "system": "dust",
+            "path": "packs/archetypes",
+            "type": "item",
+            "private": false,
+            "flags": {
+                "dust": {
+                    "types": [
+                        "archetype"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "abilities",
+            "label": "Abilities (SRD)",
+            "system": "dust",
+            "path": "packs/abilities",
+            "type": "item",
+            "private": false,
+            "flags": {
+                "dust": {
+                    "types": [
+                        "ability"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "gear",
+            "label": "Gear (SRD)",
+            "system": "dust",
+            "path": "packs/gear",
+            "type": "Item",
+            "private": false,
+            "flags": {
+                "dust": {
+                    "types": [
+                        "weapon",
+                        "equipment",
+                        "consumable",
+                        "tool",
+                        "loot",
+                        "feat",
+                        "container"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "specialites",
+            "label": "Specialites (SRD)",
+            "system": "dust",
+            "path": "packs/specialities",
+            "type": "Item",
+            "private": false,
+            "flags": {
+                "dust": {
+                    "types": [
+                        "specialities"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "path",
+            "label": "Paths (SRD)",
+            "system": "dust",
+            "path": "packs/paths",
+            "type": "Item",
+            "private": false,
+            "flags": {
+                "dust": {
+                    "types": [
+                        "path"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "rules",
+            "label": "Rules (SRD)",
+            "system": "dust",
+            "path": "packs/rules",
+            "type": "JournalEntry",
+            "private": false,
+            "flags": {
+                "display": "table-of-contents"
+            }
+        }
+    ],
+    "packFolders": [
+        {
+            "name": "DUST SRD Content",
+            "sorting": "m",
+            "color": "#cd2c1e",
+            "packs": [
+                "rules",
+                "tables",
+                "heroes"
+            ]
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json",
+            "flags": {}
+        }
+    ],
+    "media": [
+        {
+            "type": "cover",
+            "loop": false,
+            "flags": {}
+        },
+        {
+            "type": "setup",
+            "url": "systems/dust/ui/official/Logo3630.jpg",
+            "thumbnail": "systems/dust/ui/official/dust-thumbnail.jpg"
+        }
+    ],
+    "socket": true,
+    "grid": {
+        "distance": 5,
+        "units": "ft"
+    },
+    "primaryTokenAttribute": "attributes.stress",
+    "flags": {
+        "dust": {
+            "sourceBooks": {
+                "SRD 5.1": "SOURCE.BOOK.SRD"
+            },
+            "spellLists": [
+                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.ziBzRlrpBm1KVV0j",
+                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.cuG9d7J9fQH9InYT",
+                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.MWiN7ILEO0Vd3zAZ",
+                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.FhucONA0yRZQjMmb",
+                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.sANq9JMycfSq3A5d",
+                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.PVgly1xB2S2I8GLQ",
+                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.mx4TsSbBIAaAkhQ7",
+                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.k7Rs5EyXeA0SFTXD"
+            ]
+        },
+        "needsMigrationVersion": "4.0.1",
+        "compatibleMigrationVersion": "0.8",
+        "hotReload": false
+    }
+}
