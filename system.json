@@ -74,6 +74,13 @@
                     "unidentified.description"
                 ]
             },
+            "aether": {
+                "htmlFields": [
+                    "description.value",
+                    "description.chat",
+                    "unidentified.description"
+                ]
+            },
             "tool": {
                 "htmlFields": [
                     "description.value",
@@ -88,77 +95,60 @@
                     "unidentified.description"
                 ]
             },
-            "race": {
+            "speciality": {
                 "htmlFields": [
                     "description.value",
-                    "description.chat"
+                    "description.chat",
+                    "unidentified.description"
                 ]
             },
-            "background": {
+            "Feature": {
                 "htmlFields": [
                     "description.value",
-                    "description.chat"
+                    "description.chat",
+                    "unidentified.description"
+                ]
+            },
+            "quirk": {
+                "htmlFields": [
+                    "description.value",
+                    "description.chat",
+                    "unidentified.description"
+                ]
+            },
+            "drive": {
+                "htmlFields": [
+                    "description.value",
+                    "description.chat",
+                    "unidentified.description"
                 ]
             },
             "archetype": {
                 "htmlFields": [
                     "description.value",
-                    "description.chat"
+                    "description.chat",
+                    "unidentified.description"
                 ]
             },
-            "path": {
-                "htmlFields": [
-                    "description.value",
-                    "description.chat"
-                ]
-            },
-            "spell": {
-                "htmlFields": [
-                    "description.value",
-                    "description.chat"
-                ]
-            },
-            "feat": {
-                "htmlFields": [
-                    "description.value",
-                    "description.chat"
-                ]
-            },
-            "container": {
+            "player-objective": {
                 "htmlFields": [
                     "description.value",
                     "description.chat",
                     "unidentified.description"
                 ]
             },
-            "backpack": {
+            "character-objective": {
                 "htmlFields": [
                     "description.value",
                     "description.chat",
                     "unidentified.description"
                 ]
-            }
-        },
-        "JournalEntryPage": {
-            "class": {
-                "htmlFields": [
-                    "details.value",
-                    "details.additionalHitPoints",
-                    "description.additionalTraits",
-                    "description.additionalEquipment",
-                    "description.subclass"
-                ]
             },
-            "map": {},
-            "rule": {
+            "origin": {
                 "htmlFields": [
-                    "tooltip"
-                ]
-            },
-            "spells": {},
-            "subclass": {
-                "htmlFields": [
-                    "details.value"
+                    "description.value",
+                    "description.chat",
+                    "unidentified.description"
                 ]
             }
         }
@@ -180,16 +170,16 @@
             }
         },
         {
-            "name": "abilities",
-            "label": "Abilities (SRD)",
+            "name": "origins",
+            "label": "Origins (SRD)",
             "system": "dust",
-            "path": "packs/abilities",
+            "path": "packs/origins",
             "type": "item",
             "private": false,
             "flags": {
                 "dust": {
                     "types": [
-                        "ability"
+                        "origin"
                     ]
                 }
             }
@@ -209,7 +199,7 @@
                         "consumable",
                         "tool",
                         "loot",
-                        "feat",
+                        "aether",
                         "container"
                     ]
                 }
@@ -231,16 +221,16 @@
             }
         },
         {
-            "name": "path",
-            "label": "Paths (SRD)",
+            "name": "disciplines",
+            "label": "Disciplines (SRD)",
             "system": "dust",
-            "path": "packs/paths",
+            "path": "packs/disciplines",
             "type": "Item",
             "private": false,
             "flags": {
                 "dust": {
                     "types": [
-                        "path"
+                        "discipline"
                     ]
                 }
             }
@@ -255,7 +245,67 @@
             "flags": {
                 "display": "table-of-contents"
             }
-        }
+        },
+        {
+            "name": "quirks",
+            "label": "Quirks (SRD)",
+            "system": "dust",
+            "path": "packs/quirks",
+            "type": "Item",
+            "private": false,
+            "flags": {
+                "dust": {
+                    "types": [
+                        "quirk"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "drives",
+            "label": "Drives (SRD)",
+            "system": "dust",
+            "path": "packs/drives",
+            "type": "Item",
+            "private": false,
+            "flags": {
+                "dust": {
+                    "types": [
+                        "drive"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "player-objectives",
+            "label": "Player Objectives (SRD)",
+            "system": "dust",
+            "path": "packs/player-objectives",
+            "type": "Item",
+            "private": false,
+            "flags": {
+                "dust": {
+                    "types": [
+                        "player-objective"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "character-objectives",
+            "label": "Character Objectives (SRD)",
+            "system": "dust",
+            "path": "packs/character-objectives",
+            "type": "Item",
+            "private": false,
+            "flags": {
+                "dust": {
+                    "types": [
+                        "character-objective"
+                    ]
+                }
+            }
+        },
     ],
     "packFolders": [
         {
@@ -264,9 +314,17 @@
             "color": "#cd2c1e",
             "packs": [
                 "rules",
-                "tables",
-                "heroes"
+                "disciplines",
+                "specialities",
+                "gear",
+                "origins",
+                "archetypes",
+                "quirks",
+                "drives",
+                "player-objectives",
+                "character-objectives",
             ]
+        }
     ],
     "languages": [
         {
@@ -284,7 +342,7 @@
         },
         {
             "type": "setup",
-            "url": "systems/dust/ui/official/Logo3630.jpg",
+            "url": "systems/dust/ui/official/LogohypercubeColor.jpg",
             "thumbnail": "systems/dust/ui/official/dust-thumbnail.jpg"
         }
     ],
@@ -297,7 +355,21 @@
     "flags": {
         "dust": {
             "sourceBooks": {
-                "SRD": "SOURCE.BOOK.SRD"
+                "SRD 5.1": "SOURCE.BOOK.SRD"
             },
+            "spellLists": [
+                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.ziBzRlrpBm1KVV0j",
+                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.cuG9d7J9fQH9InYT",
+                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.MWiN7ILEO0Vd3zAZ",
+                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.FhucONA0yRZQjMmb",
+                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.sANq9JMycfSq3A5d",
+                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.PVgly1xB2S2I8GLQ",
+                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.mx4TsSbBIAaAkhQ7",
+                "Compendium.dust.rules.JournalEntry.QvPDSUsAiEn3hD8s.JournalEntryPage.k7Rs5EyXeA0SFTXD"
+            ]
         },
+        "needsMigrationVersion": "4.0.1",
+        "compatibleMigrationVersion": "0.8",
+        "hotReload": false
+    }
 }
